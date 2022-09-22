@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerSword
+  - SkeletonSword
+  - TestBox
+  - Fire
+  - Quest1Skeleton
+  - door1
+  - door2
+  - door2NewTrans
+  - door1NewTrans
+  - door1OldTrans
+  - door2OldTrans
+  - doorSkele1
+  - doorSkele2
+  - Tile
+  - BossRoomTrans
+  - BeforeBossTrans
+  - DeepMinesTrans
+  - StartDoorTrigger
+  - CloseDoorTrigger
+  - door3OldTrans
+  - door3NewTrans
+  - door3
+  - QuestController
+  - Gate
+  - GateOpen
+  - GateClosed
+  - Igor
+  - Jail
+  - JailOldTrans
+  - JailNewTrans
+  - Fade
+  - RivenDaleSpawn
+  - Quest1CompleteChest
+  - Porthos
+  - RivenPorthos
+  - PorthosTrans
+  - gate1
+  - gate2
+  - gate1OldTrans
+  - gate2OldTrans
+  - gate1NewTrans
+  - gate2NewTrans
+  - HallSkeleton
+  - GuardSkeleton
+  - EscMenu
+  - OptionsMenu
+  - PondDoorTrigger
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - EnemyRaycast
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

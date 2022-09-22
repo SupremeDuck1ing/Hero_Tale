@@ -1,0 +1,665 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7879792155916962418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Note 1
+  m_EditorClassIdentifier: 
+  m_QuestName: Note 1
+  m_Title: Note 1
+  m_Description: Collect 1st Piece of Evidence
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions:
+  - id: 1
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -6719395718087059943, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: 766400955796687879}
+        m_Status: 1
+--- !u!114 &-6423005375969349800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Note 2
+  m_EditorClassIdentifier: 
+  m_QuestName: Note 2
+  m_Title: Note 2
+  m_Description: Collect 2nd Piece of Evidence
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions:
+  - id: 1
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 3495043147593669061, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: 766400955796687879}
+        m_Status: 1
+--- !u!114 &-6368101530784015673
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Kill Skeletons
+  m_EditorClassIdentifier: 
+  m_QuestName: Kill Skeletons
+  m_Title: Kill Skeletons
+  m_Description: Young Alec, skeletal marauders are once again threatening our town.
+    Hone your combat prowess by repelling these foul abominations. Our last reports
+    mentions recurring sightings by the lake just outside town.
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 1
+  rewards:
+  - id: 0
+  - id: 1
+  - id: 2
+  m_TaskExecution: 0
+  conditions:
+  - id: 3
+  tasks:
+  - id: 4
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -6442420119529586086, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 10
+        m_Window: Inventory
+    00000001:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: 6234106693565876968, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 20
+        m_Window: Inventory
+    00000002:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 8429455951140046941, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000003:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: -4138739071351273381}
+        m_Status: 2
+    00000004:
+      type: {class: QuestTask, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Name: Destroy Skeletons
+        m_Description: Kill The Skeletons
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1} Skeletons Defeated'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+--- !u!114 &-6317935289069132848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e66d169d23974a4c9dd56239e2d7cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+  questWindowName: Quest
+  questSelectionWindowName: Quest Selection
+--- !u!114 &-6016312251917584129
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58f90c13f37d0f4992d7d801cf02f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savingKey: Player
+  autoSave: 0
+  provider: 0
+--- !u!114 &-5377398499657760772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Thank You
+  m_EditorClassIdentifier: 
+  m_QuestName: Thank You
+  m_Title: Thank You
+  m_Description: Seems like I was right about you Young Alec! Your techniques may
+    be rough, but you possess a raw talent I haven't seen in decades. Thanks to you,
+    Rivendale is safe, and we can begin the process of rebuilding.  You're welcome
+    to stay as long as you want and I encourage you to get to know the other villagers.
+    When you're finished, return to me and we can continue your journey.
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions:
+  - id: 1
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -6442420119529586086, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 20
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: -3892146113612347736}
+        m_Status: 2
+--- !u!114 &-4138739071351273381
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Aftermath
+  m_EditorClassIdentifier: 
+  m_QuestName: Aftermath
+  m_Title: Aftermath
+  m_Description: "Welcome back Young Alec! Once again you have exceeded my expectations
+    and proven your worth as a true Hero!\n\nHowever, I'm afraid we now face an even
+    darker future than I imagined. The evidence you gathered from the Orc Lair and
+    Porthos' own accounts indicate a greater intelligence behind recent events. 
+    \n\nNecrathun. \n\nA name I thought lost to the ages, a plague on the world buried
+    long ago by the sacrifices of inumerable heores. If he really has returned, then
+    I fear Death may descend upon us once more. We cannot lose hope though, as long
+    as heroes like you continue to stand against the dark. We must prepare Young
+    Alec, for your greatest trials are yet to come."
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions:
+  - id: 1
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -6442420119529586086, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 10
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: 766400955796687879}
+        m_Status: 2
+--- !u!114 &-3892146113612347736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Welcome To Rivendale
+  m_EditorClassIdentifier: 
+  m_QuestName: Welcome To Rivendale
+  m_Title: Welcome To Rivendale
+  m_Description: Welcome to Rivendale Young Adventurer! I wish you had arrived under
+    better circumstances, but alas our town has been beseiged by undead marauders.
+    Normally we'd drive them off ourselves, but our strongest warriors and hunters
+    were conscripted by the King for his inane war, leaving only younglings who have
+    never tasted battle and old fools like myself to defend the village. Were we
+    to mount an offensive, it would surely end in disaster, but you look like one
+    with the heart of a hero and the ferocity to match. Please, oust these nightmares
+    and bring peace to Rivendale once more.
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  - id: 1
+  m_TaskExecution: 1
+  conditions: []
+  tasks:
+  - id: 2
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -8967533827971111582, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: 6234106693565876968, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 20
+        m_Window: Inventory
+    00000002:
+      type: {class: QuestTask, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Name: Destroy Skeletons
+        m_Description: Protect Rivendale
+        m_RequiredProgress: 2
+        m_ProgressMessage: '{0}/{1} Skeletons Defeated'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+--- !u!114 &-3447099506359929507
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778d048687ebc8141954ad6b344d100f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  debugMessages: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfaaa994bbb124e8ceb26995cd12c8, type: 3}
+  m_Name: MyQuests
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: -3892146113612347736}
+  - {fileID: -5377398499657760772}
+  - {fileID: 766400955796687879}
+  - {fileID: -7879792155916962418}
+  - {fileID: -6423005375969349800}
+  - {fileID: 7107046582925242657}
+  - {fileID: -4138739071351273381}
+  - {fileID: 6802691013872637889}
+  - {fileID: -6368101530784015673}
+  settings:
+  - {fileID: -3447099506359929507}
+  - {fileID: 8187595447880020151}
+  - {fileID: -6317935289069132848}
+  - {fileID: -6016312251917584129}
+--- !u!114 &766400955796687879
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Search and Rescue
+  m_EditorClassIdentifier: 
+  m_QuestName: Search and Rescue
+  m_Title: Search and Rescue
+  m_Description: I hope you had ample time to rest and refresh yourself Young Alec,
+    as I'm afraid another dire situation has arisen. One of our scouts, Porthos,
+    was investigating a nearby cave system that he observed the undead marauders
+    enter and exit on multiple occasions. Unfortunately, Porthos has yet to return
+    from his last expedition, and I fear he may be captured, or worse. In the chest
+    beside me, there is a rune that will transport you to the cave system. Find out
+    what happened to Porthos, and if he still lives, bring him back home. Be brave
+    Young Alec, we don't know what awaits in the dark.
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 1
+  conditions:
+  - id: 1
+  tasks:
+  - id: 2
+  - id: 3
+  - id: 4
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -8859189835947310016, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 25
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: -5377398499657760772}
+        m_Status: 2
+    00000002:
+      type: {class: GatherQuestTask, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_Name: Collect 1st Piece of Evidence
+        m_Description: Discover Why Porthos Disappeared
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1} Evidence Collected'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+        m_Item: {fileID: -6719395718087059943, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        m_Window: Inventory
+        m_RemoveItems: 1
+    00000003:
+      type: {class: GatherQuestTask, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_Name: Collect 2nd Piece of Evidence
+        m_Description: Determine Who Kidnapped Porthos
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1} Kidnapper Discovered'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+        m_Item: {fileID: 3495043147593669061, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        m_Window: Inventory
+        m_RemoveItems: 1
+    00000004:
+      type: {class: GatherQuestTask, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_Name: Porthos Fate
+        m_Description: Determine Porthos' Fate
+        m_RequiredProgress: 1
+        m_ProgressMessage: '{0}/{1} Porthos Found'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+        m_Item: {fileID: -6266380644497530537, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        m_Window: Inventory
+        m_RemoveItems: 0
+--- !u!114 &6802691013872637889
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: In Your Debt
+  m_EditorClassIdentifier: 
+  m_QuestName: In Your Debt
+  m_Title: In Your Debt
+  m_Description: Thanks again Sir Alec, if it wasn't for you, I may never have seen
+    my family again. If you ever need anything , don't hesitate to call on old Porthos.
+    For now though, take my father's lucky fishing rod. There's a small lake just
+    outside town if you want to try your hand at catching a few fish for dinner.
+    Stay safe Sir Alec!
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions:
+  - id: 1
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 757395598172549354, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: HasQuest, ns: DevionGames.QuestSystem, asm: DevionGames.QuestSystem}
+      data:
+        m_Type: DevionGames.QuestSystem.HasQuest
+        m_Enabled: 1
+        requiredQuest: {fileID: 766400955796687879}
+        m_Status: 2
+--- !u!114 &7107046582925242657
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Porthos Saved
+  m_EditorClassIdentifier: 
+  m_QuestName: Porthos Saved
+  m_Title: Porthos Saved
+  m_Description: Thank the gods you arrived when you did Sir! Those goblins had half
+    a mind to chop me up and turn me into stew, but the big one kept talking about
+    his master's "plans" for me and the village. We have to get back to Elder Galdos
+    and make sure he knows somthing bad is headed Rivendale's way. Here, take my
+    transport rune to Rivendale. I managed to hide it from my captors, but using
+    it would drain me of what little energy I have left. There's also a chest in
+    the back of the cell where I saw the orcs store some of their ill-gotten gains.
+    Grab what you can and send us back to Rivendale as soon as possible. Thanks again
+    for the rescue, Stranger.
+  m_AutoComplete: 1
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions: []
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -6266380644497530537, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+--- !u!114 &8187595447880020151
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb3726c0da5bd9419f884b821ef7c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toFarAway:
+    title: 
+    text: This is to far away!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  inUse:
+    title: 
+    text: My life is already fairly busy.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questCompleted:
+    title: 
+    text: '{0} completed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskCompleted:
+    title: 
+    text: '{0} completed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  cancelQuest:
+    title: Cancel Quest
+    text: Are you sure you want to cancel the quest?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1

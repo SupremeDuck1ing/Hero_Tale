@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3959194923869890492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb3726c0da5bd9419f884b821ef7c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toFarAway:
+    title: 
+    text: This is to far away!
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  inUse:
+    title: 
+    text: My life is already fairly busy.
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questCompleted:
+    title: 
+    text: '{0} completed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  questFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskCompleted:
+    title: 
+    text: '{0} completed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  taskFailed:
+    title: 
+    text: '{0} failed.'
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+  cancelQuest:
+    title: Cancel Quest
+    text: Are you sure you want to cancel the quest?
+    color: {r: 1, g: 1, b: 1, a: 1}
+    icon: {fileID: 0}
+    delay: 2
+    duration: 2
+    ignoreTimeScale: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5abfaaa994bbb124e8ceb26995cd12c8, type: 3}
+  m_Name: InventoryQuestDatabase
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 5976293767583720190}
+  - {fileID: 5709217632513793400}
+  settings:
+  - {fileID: 8182679272224264037}
+  - {fileID: -3959194923869890492}
+  - {fileID: 4012778324399650795}
+  - {fileID: 3118815043565418319}
+--- !u!114 &3118815043565418319
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e66d169d23974a4c9dd56239e2d7cca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notificationName: Notification
+  dialogBoxName: Dialog Box
+  questWindowName: Quest
+  questSelectionWindowName: Quest Selection
+--- !u!114 &4012778324399650795
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58f90c13f37d0f4992d7d801cf02f7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savingKey: Player
+  autoSave: 0
+  provider: 0
+--- !u!114 &5709217632513793400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Gathering
+  m_EditorClassIdentifier: 
+  m_QuestName: Gathering
+  m_Title: Gathering Health Potion
+  m_Description: This is a gathering quest example.
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  m_TaskExecution: 0
+  conditions: []
+  tasks:
+  - id: 1
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: -2060425377994505070, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 1
+        m_Window: Inventory
+    00000001:
+      type: {class: GatherQuestTask, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_Name: Gather Task
+        m_Description: Find and deliver 6 health potions.
+        m_RequiredProgress: 6
+        m_ProgressMessage: '{0}/{1} potions'
+        m_UseTimeLimit: 0
+        m_TimeLimit: 300
+        m_Optional: 0
+        m_Item: {fileID: 8429455951140046941, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        m_Window: Inventory
+        m_RemoveItems: 1
+--- !u!114 &5976293767583720190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9903c79ed490914385b1558b4a55a87, type: 3}
+  m_Name: Welcome Quest
+  m_EditorClassIdentifier: 
+  m_QuestName: Welcome Quest
+  m_Title: Welcome Quest
+  m_Description: 'This is a simple example quest without any tasks. You can accept
+    it and immediately complete it. I hope you enjoy the quest system and give me
+    some feedback on the discord channel.
+
+
+    Thank you!'
+  m_AutoComplete: 0
+  m_RestartFailed: 1
+  m_RestartCanceled: 1
+  m_RestartCompleted: 0
+  rewards:
+  - id: 0
+  - id: 1
+  - id: 2
+  m_TaskExecution: 0
+  conditions: []
+  tasks: []
+  references:
+    version: 1
+    00000000:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 8429455951140046941, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 3
+        m_Window: Inventory
+    00000001:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 7862562661164667157, guid: 3c8a2ffa2a916984191675909ad5022f,
+          type: 3}
+        m_Item: {fileID: 6234106693565876968, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 15
+        m_Window: Inventory
+    00000002:
+      type: {class: ItemReward, ns: DevionGames.QuestSystem.Integrations.InventorySystem,
+        asm: Assembly-CSharp}
+      data:
+        m_DisplayRewardPrefab: {fileID: 1943138204804832439, guid: f3765970f0dc1354e932563d2693ec78,
+          type: 3}
+        m_Item: {fileID: -2811142919616601772, guid: 1ae57b994efcab048a1bb130d4e11d83,
+          type: 2}
+        amount: 138
+        m_Window: Inventory
+--- !u!114 &8182679272224264037
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778d048687ebc8141954ad6b344d100f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  debugMessages: 1
